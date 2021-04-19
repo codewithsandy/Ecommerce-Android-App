@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="co.sandyedemo.ecomdemo.Fragments.CategoryList">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/categoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="15dp" />
+
+    <LinearLayout
+        android:id="@+id/noProductAddedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/item_not_added" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="No product added in this category!"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/contShopping"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:text="Continue Shopping"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+             />
+    </LinearLayout>
+
+</RelativeLayout>

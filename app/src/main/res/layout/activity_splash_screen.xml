@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.sandyedemo.ecomdemo.Activities.SplashScreen">
+
+    <ImageView
+        android:id="@+id/splashImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/splashscreen" />
+
+    <LinearLayout
+        android:id="@+id/internetNotAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/internetErrorIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/item_not_added" />
+
+        <TextView
+            android:id="@+id/errorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Internet Connection Not Available"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/tryAgain"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:inputType="text"
+            android:text="Try Again"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

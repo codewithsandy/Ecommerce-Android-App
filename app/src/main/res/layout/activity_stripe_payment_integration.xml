@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stripe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.sandyedemo.ecomdemo.PaymentIntegrationMethods.StripePaymentIntegration">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/stripe_logo" />
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/card_input_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_input_widget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Pay"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+</RelativeLayout>

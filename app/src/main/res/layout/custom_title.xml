@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:padding="5dp"
+            android:src="@drawable/menu_icon" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back_icon"
+            android:tint="@color/color_white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="eCommerce App"
+            android:textColor="@color/color_white"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/cart_icon" />
+
+        <TextView
+            android:id="@+id/cartCount"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cart_count_back"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/cart"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/search_icon"
+            android:tint="@color/white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>

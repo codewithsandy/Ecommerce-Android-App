@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white">
+
+            <ImageView
+                android:id="@+id/productImage1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/defaultimage" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/productImage1"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp">
+
+
+                <TextView
+                    android:id="@+id/productName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Trump returns to white House from vacation at the end of a catastrophic week"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productName1"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="3"
+                    android:text="Price: $6,999"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:id="@+id/sizeColorLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/price1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingRight="20dp"
+                        android:text="Size:"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Color:"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productImage1"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="7dp"
+                android:paddingRight="10dp"
+                android:text="Qty: 1 "
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

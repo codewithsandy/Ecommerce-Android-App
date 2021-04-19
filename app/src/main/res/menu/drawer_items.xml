@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="My Account">
+
+
+        <menu>
+            <item
+                android:id="@+id/myProfile"
+                android:icon="@drawable/profile_icon"
+                android:title="My Profile" />
+            <item
+                android:id="@+id/myWishList"
+                android:icon="@drawable/favorited_icon"
+                android:title="My Wish List" />
+            <item
+                android:id="@+id/myCart"
+                android:icon="@drawable/menu_cart_icon"
+                android:title="My Cart" />
+            <item
+                android:id="@+id/myOrders"
+                android:icon="@drawable/my_order_icon"
+                android:title="My Orders" />
+        </menu>
+    </item>
+    <item android:title="Support">
+        <menu>
+            <item
+                android:id="@+id/faq"
+                android:icon="@drawable/menu_faq_icon"
+                android:title="FAQ" />
+            <item
+                android:id="@+id/email"
+                android:icon="@drawable/email_icon"
+                android:title="Email" />
+            <item
+                android:id="@+id/call"
+                android:icon="@drawable/contact_icon"
+                android:title="Call" />
+            <item
+                android:id="@+id/Whatsapp"
+                android:icon="@drawable/whatsappicon"
+                android:title="Whatsapp" />
+        </menu>
+    </item>
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/appInfo"
+                android:icon="@drawable/info_icon"
+                android:title="App Info" />
+            <item
+                android:id="@+id/rateApp"
+                android:icon="@drawable/rate_icon"
+                android:title="Rate App" />
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share_icon"
+                android:title="Share" />
+        </menu>
+    </item>
+</menu>

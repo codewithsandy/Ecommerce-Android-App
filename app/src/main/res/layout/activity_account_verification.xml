@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_title1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:context="co.sandyedemo.ecomdemo.Activities.AccountVerification">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/appicon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Verifcation Pending"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="We already sent confirmation email. If you didn't receive please resend it by filling your email below."
+                android:textSize="17sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/light_black">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4a4a4a"
+                    android:hint="Email Address"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/resendEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Re-send email"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/sky_blue"
+                android:layout_marginLeft="3dp"
+                android:text="Login"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/signUp"
+                android:layout_width="0dp"
+                android:layout_marginRight="3dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/sky_blue"
+                android:layout_marginLeft="3dp"
+                android:text="Sign up"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

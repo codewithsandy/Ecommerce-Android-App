@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp">
+
+                <EditText
+                    android:id="@+id/fullNameEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="12dp"
+                android:text="Choose Gender *"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/male_unselect"
+                    app:civ_border_color="@color/light_black"
+                    app:civ_border_width="0.5dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:src="@drawable/female_unselect"
+                    app:civ_border_color="@color/light_black"
+                    app:civ_border_width="0.5dp" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp">
+
+                <EditText
+                    android:id="@+id/mobEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number *"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingLeft="6dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp">
+
+                <EditText
+                    android:id="@+id/cityEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City *"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="6dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp">
+
+                <EditText
+                    android:id="@+id/areaEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Locality, area or street *"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="6dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp">
+
+                <EditText
+                    android:id="@+id/buildingEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Flat no., Building name *"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="6dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6dp">
+
+                    <EditText
+                        android:id="@+id/pincodeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Pincode *"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:paddingLeft="6dp"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="52dp"
+                    android:layout_toRightOf="@+id/relativeLayout2">
+
+                    <EditText
+                        android:id="@+id/stateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="State *"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp">
+
+                <EditText
+                    android:id="@+id/landmarkEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Landmark(Optional)"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="6dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:inputType="text"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:inputType="text"
+                android:text="Logout"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/item_not_added" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Login First!"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Login first to view your profile" />
+
+            <Button
+                android:id="@+id/loginNow"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:inputType="text"
+                android:text="Login Now"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txtSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="New here? Sign Up"
+                android:textColor="@color/blue"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/verifyEmailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/user_login_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Verification is pending."
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Please verify your email to view your profile" />
+
+            <Button
+                android:id="@+id/verfiyNow"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:inputType="text"
+                android:text="Verify Now"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

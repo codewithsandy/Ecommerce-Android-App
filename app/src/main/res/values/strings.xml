@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Store</string>
+    <string name="secure_payment_text"><![CDATA[Safe and Secure Payments. <br />100% Authentic products]]></string>
+    <string name="emailId">info@sandyedemo.co</string>
+    <string name="err_msg_email">Please Enter A Valid Email Id</string>
+    <string name="contactNo">9730726208</string>
+    <string name="whatsapp">8669067004</string>
+    <string name="targetProductImageWidth">300</string>
+    <string name="targetProductImageHeight">250</string>
+    <string name="targetProductImageWidth1">100</string>
+    <string name="cartImageWidth">100</string>
+    <string name="fullImageWidth">500</string>
+</resources>

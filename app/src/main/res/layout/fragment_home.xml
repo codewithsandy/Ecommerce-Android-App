@@ -1,0 +1,72 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simpleSwipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EBEBEB"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/topSpaceView"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent" />
+
+            <LinearLayout
+                android:id="@+id/sliderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/white"
+                    android:overScrollMode="never" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/dotsRecyclerView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/categoryRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="15dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="15dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/categoryProductRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="2dp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

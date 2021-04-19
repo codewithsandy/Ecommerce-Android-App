@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context="co.sandyedemo.ecomdemo.Activities.Login">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:id="@+id/loginLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/appicon" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/light_black">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/light_black"
+                    android:hint="Full Name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/light_black">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/light_black"
+                    android:hint="Email Address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/passwordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/light_black">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/light_black"
+                    android:hint="Password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/confirmPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/light_black">
+
+                <EditText
+                    android:id="@+id/confirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/light_black"
+                    android:hint="Confirm Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/signUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Sign Up"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Already have account? Sign In"
+                android:textColor="@color/blue"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="10dp"
+        android:tint="@color/light_black"
+        android:src="@drawable/back_icon" />
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="?attr/selectableItemBackground"
+        android:elevation="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white">
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/defaultimage" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productImage"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="5dp">
+
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Trump returns to white House from vacation at the end of a catastrophic week"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productName"
+                    android:maxLines="3"
+                    android:text="$6,999"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/actualPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/price"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/price"
+                    android:maxLines="3"
+                    android:textColor="@color/light_black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/discountPercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/price"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/actualPrice"
+                    android:maxLines="3"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/color_white">
+
+            <ImageView
+                android:id="@+id/productImage1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"
+                android:src="@drawable/defaultimage" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/productImage1"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp">
+
+
+                <TextView
+                    android:id="@+id/productName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="Trump returns to white House from vacation at the end of a catastrophic week"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productName1"
+                    android:maxLines="3"
+                    android:text="$6,999"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/actualPrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/price1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/price1"
+                    android:maxLines="3"
+                    android:textColor="@color/light_black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/discountPercentage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/price1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/actualPrice1"
+                    android:maxLines="3"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:padding="3dp"
+                    android:tint="#C7C7C7"
+                    android:src="@drawable/delete_icon" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

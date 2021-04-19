@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="co.sandyedemo.ecomdemo.Fragments.CategoryList">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/categoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/proceedToPayment"
+        android:background="@color/white"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="15dp" />
+
+    <Button
+        android:id="@+id/proceedToPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:inputType="text"
+        android:text="Proceed to payment"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/emptyCartLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/empty_cart_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Your cart is empty!"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Add product in your cart now." />
+
+        <Button
+            android:id="@+id/continueShopping"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:inputType="text"
+            android:text="Shop Now"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/user_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Login First!"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Login first to view your cart" />
+
+        <Button
+            android:id="@+id/loginNow"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:inputType="text"
+            android:text="Login Now"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="New here? Sign Up"
+            android:textColor="@color/blue"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/verifyEmailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/user_login_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Verification is pending."
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Please verify your email to view your cart." />
+
+        <Button
+            android:id="@+id/verfiyNow"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:inputType="text"
+            android:text="Verify Now"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</RelativeLayout>

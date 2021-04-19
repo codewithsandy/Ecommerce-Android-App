@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/orderedProductsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/viewOrderDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:text="View Order Details"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignBottom="@+id/viewOrderDetails"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Date: 01 Jan 2018"
+                    android:textSize="11sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

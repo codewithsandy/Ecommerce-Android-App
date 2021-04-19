@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:id="@+id/productImage1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/defaultimage" />
+
+
+        <TextView
+            android:id="@+id/productName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/productImage1"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Trump returns to white House from vacation at the end of a catastrophic week"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/dotLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/productImage1"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>
